@@ -60,7 +60,7 @@ export function ExpenseForm({ editing, onSubmit, onCancelEdit }: Props) {
               reset()
               onCancelEdit()
             }}
-            className="text-xs text-neutral-500 underline-offset-2 hover:underline"
+            className="text-xs text-neutral-400 underline-offset-2 hover:underline"
           >
             Cancelar
           </button>
@@ -125,11 +125,11 @@ export function ExpenseForm({ editing, onSubmit, onCancelEdit }: Props) {
         />
       </div>
 
-      {error && <p className="text-xs text-red-600">{error}</p>}
+      {error && <p className="text-xs text-red-400">{error}</p>}
 
       <button
         type="submit"
-        className="w-full rounded-lg bg-neutral-900 px-3 py-2 text-sm font-medium text-white transition hover:bg-neutral-700"
+        className="w-full rounded-lg bg-neutral-100 px-3 py-2 text-sm font-medium text-neutral-900 transition hover:bg-white"
       >
         {editing ? 'Guardar cambios' : 'Agregar gasto'}
       </button>

@@ -37,21 +37,21 @@ export function DataActions({ expenses, onImport }: Props) {
   return (
     <div className="card space-y-3">
       <h2 className="text-sm font-semibold">Respaldo</h2>
-      <p className="text-xs text-neutral-500">
+      <p className="text-xs text-neutral-400">
         Los datos viven solo en este navegador. Exporta un JSON para no perderlos.
       </p>
       <div className="flex gap-2">
         <button
           type="button"
           onClick={handleExport}
-          className="flex-1 rounded-lg border border-neutral-200 px-3 py-2 text-sm transition hover:border-neutral-900"
+          className="flex-1 rounded-lg border border-neutral-800 px-3 py-2 text-sm transition hover:border-neutral-500"
         >
           Exportar
         </button>
         <button
           type="button"
           onClick={() => inputRef.current?.click()}
-          className="flex-1 rounded-lg border border-neutral-200 px-3 py-2 text-sm transition hover:border-neutral-900"
+          className="flex-1 rounded-lg border border-neutral-800 px-3 py-2 text-sm transition hover:border-neutral-500"
         >
           Importar
         </button>
@@ -63,7 +63,7 @@ export function DataActions({ expenses, onImport }: Props) {
         onChange={handleImport}
         className="hidden"
       />
-      {message && <p className="text-xs text-neutral-500">{message}</p>}
+      {message && <p className="text-xs text-neutral-400">{message}</p>}
     </div>
   )
 }

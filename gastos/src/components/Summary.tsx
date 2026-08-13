@@ -22,14 +22,14 @@ export function Summary({ expenses, anchor, period, onShift, onToday }: Props) {
           type="button"
           onClick={() => onShift(-1)}
           aria-label="Período anterior"
-          className="rounded-lg px-2 py-1 text-neutral-500 transition hover:bg-neutral-100 hover:text-neutral-900"
+          className="rounded-lg px-2 py-1 text-neutral-400 transition hover:bg-neutral-800 hover:text-neutral-100"
         >
           ←
         </button>
         <button
           type="button"
           onClick={onToday}
-          className="text-sm font-medium text-neutral-700 hover:text-neutral-900"
+          className="text-sm font-medium text-neutral-300 hover:text-neutral-100"
         >
           {formatPeriodLabel(anchor, period)}
         </button>
@@ -37,19 +37,19 @@ export function Summary({ expenses, anchor, period, onShift, onToday }: Props) {
           type="button"
           onClick={() => onShift(1)}
           aria-label="Período siguiente"
-          className="rounded-lg px-2 py-1 text-neutral-500 transition hover:bg-neutral-100 hover:text-neutral-900"
+          className="rounded-lg px-2 py-1 text-neutral-400 transition hover:bg-neutral-800 hover:text-neutral-100"
         >
           →
         </button>
       </div>
       <p className="mt-4 text-center text-4xl font-semibold tabular-nums">{formatAmount(total)}</p>
-      <div className="mt-4 grid grid-cols-2 gap-3 text-center text-xs text-neutral-500">
+      <div className="mt-4 grid grid-cols-2 gap-3 text-center text-xs text-neutral-400">
         <div>
-          <p className="text-sm font-medium text-neutral-900">{expenses.length}</p>
+          <p className="text-sm font-medium text-neutral-100">{expenses.length}</p>
           <p>Registros</p>
         </div>
         <div>
-          <p className="text-sm font-medium text-neutral-900">{formatAmount(total / days)}</p>
+          <p className="text-sm font-medium text-neutral-100">{formatAmount(total / days)}</p>
           <p>Promedio diario</p>
         </div>
       </div>

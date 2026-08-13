@@ -37,7 +37,7 @@ export default function App() {
       <header className="mb-8 flex flex-wrap items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-semibold tracking-tight">Gastos</h1>
-          <p className="text-sm text-neutral-500">Registro diario, semanal y mensual.</p>
+          <p className="text-sm text-neutral-400">Registro diario, semanal y mensual.</p>
         </div>
         <PeriodTabs value={period} onChange={setPeriod} />
       </header>
